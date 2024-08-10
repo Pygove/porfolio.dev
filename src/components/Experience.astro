@@ -1,0 +1,33 @@
+---
+import ExperienceItem from "../components/ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "AgroSistema",
+    description:
+      "Responsable del desarrollo frontend de un sistema web que facilita a los productores locales la realización de análisis de suelo de manera autónoma, sin necesidad de un laboratorio. Además, ofrece a los productores la posibilidad de mantener un historial detallado de las diferentes parcelas de su finca.",
+  },
+  {
+    date: "Septiembre 2023 - Marzo 2024",
+    title: "FrontEnd Developer",
+    description:
+      "Encargado de la creación de la interfaz de usuario de un sistema de gestión que abarca clientes, productos y proveedores.",
+  },
+  {
+    date: "Septiembre 2019 - Diciembre 2023",
+    title: "Python Developer",
+    description:
+      "Desarrollador de un sistema que calcula diversos datos relacionados con la ruptura de mamposterías de ladrillo hueco, como tensiones y deformaciones, mediante el método de elementos finitos, utilizando parámetros de entrada.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
