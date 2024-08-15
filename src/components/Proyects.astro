@@ -5,6 +5,11 @@ import ReactIcon from '../components/icons/React.astro'
 import GitHubIcon from './icons/GitHub.astro'
 import LinkIcon from './icons/Link.astro'
 import LinkButton from './icons/LinkButton.astro'
+import ViteIcon from './icons/Vite.astro'
+import PythonIcon from './icons/Python.astro'
+import VSCodeIcon from './icons/VSCode.astro'
+import WordpressIcon from './icons/Wordpress.astro'
+import CanvasIcon from './icons/Canvas.astro'
 
 const TAGS = {
     NEXT:{    
@@ -22,16 +27,65 @@ const TAGS = {
     class: "bg-black text-[white",
     icon: ReactIcon,},
 
+    VITE:{    
+    name: "Vite",
+    class: "bg-black text-[white",
+    icon: ViteIcon,},
+
+    PYTHON:{    
+    name: "Python",
+    class: "bg-black text-[white",
+    icon: PythonIcon,},
+
+    VSCODE:{    
+    name: "VSCode",
+    class: "bg-black text-[white",
+    icon: VSCodeIcon,},
+
+    WORDPRESS:{    
+    name: "Wordpress",
+    class: "bg-black text-[white",
+    icon: WordpressIcon,},
+
+    CANVAS:{    
+    name: "Canvas",
+    class: "bg-black text-[white",
+    icon: CanvasIcon,},
+
 }
 
 const PROJECTS = [
     {
         title : 'Venecitas',
-        description : 'Encargado de la creación de la interfaz de usuario de un sistema de gestión que abarca clientes, productos y proveedores. Se logro acelerar el proceso de desarrollo, logrando entregar el modulo de proveedores luego del primer mes de trabajo.',
-        link : 'Como el sistema es de uso local de la tienda, el link permanecera privado',
-        github : 'Privado',
-        image : '/proyects/venecitas_1.webp',
-        tags : [TAGS.NEXT,TAGS.TAILWIND,TAGS.REACT]
+        description : 'Sistema de gestión de clientes, productos y proveedores.',
+        link : 'https://www.figma.com/proto/1Nv4eu5pE5hlpkzaXGphHR/Venecitas?node-id=517-11783&t=bhAiwkItmj7eIg92-0&scaling=min-zoom&content-scaling=fixed&page-id=16%3A1439&starting-point-node-id=25%3A1412',
+        image : '/proyects/Venecitas_1.webp',
+        tags : [TAGS.NEXT,TAGS.TAILWIND,TAGS.REACT],
+        github : '',
+    },
+    {
+        title : 'AgroSistema',
+        description : 'Sistema web que permite al agricultor realizar un análisis de suelo utilizando datos estáticos almacenados en una base de datos y parámetros de entrada obtenidos de un sensor externo. Además, el sistema calcula la cantidad de fertilizante necesaria para aplicar al suelo después de la cosecha.',
+        link : 'https://www.figma.com/proto/TKsTLS1Xpa0yjpVqFKXDkA/AgroSistema-Login?node-id=13-89&t=y9CmtXer1riXU3II-1',
+        image : '/proyects/AgroSistema_1.webp',
+        tags : [TAGS.VITE,TAGS.TAILWIND,TAGS.REACT],
+        github : '',
+    },
+    {
+        title : 'LCHEQ',
+        description : 'Herramienta que facilita la generación de resultados representativos del comportamiento experimental de probetas sometidas a compresión. El proceso modela las tensiones, los desplazamientos y las grietas generadas durante la rotura de las mismas (actualmente en desarrollo), empleando el método de elementos finitos. ',
+        link : '',
+        image : '/proyects/LCHEQ_1.webp',
+        tags : [TAGS.PYTHON,TAGS.VSCODE],
+        github : 'https://github.com/Pygove/LCHEQ_Inv',
+    },
+    {
+        title : 'Momentum',
+        description : 'Emprendimiento de tarjetas digitales para bodas, cumpleaños, graduaciones, etc.',
+        link : '',
+        image : '/proyects/LCHEQ_1.webp',
+        tags : [TAGS.WORDPRESS,TAGS.CANVAS],
+        github : '',
     }
 ]
 
