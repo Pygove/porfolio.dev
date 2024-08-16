@@ -10,6 +10,8 @@ import PythonIcon from './icons/Python.astro'
 import VSCodeIcon from './icons/VSCode.astro'
 import WordpressIcon from './icons/Wordpress.astro'
 import CanvasIcon from './icons/Canvas.astro'
+import FastApiIcon from './icons/FastApi.astro'
+import MongoDBIcon from './icons/MongoDB.astro'
 
 const TAGS = {
     NEXT:{    
@@ -24,33 +26,43 @@ const TAGS = {
 
     REACT:{    
     name: "React",
-    class: "bg-black text-[white",
+    class: "bg-black text-[white] light:text-black",
     icon: ReactIcon,},
 
     VITE:{    
     name: "Vite",
-    class: "bg-black text-[white",
+    class: "bg-black text-[white] light:text-black",
     icon: ViteIcon,},
 
     PYTHON:{    
     name: "Python",
-    class: "bg-black text-[white",
+    class: "bg-black text-[white] light:text-black",
     icon: PythonIcon,},
 
     VSCODE:{    
     name: "VSCode",
-    class: "bg-black text-[white",
+    class: "bg-black text-[white] light:text-black",
     icon: VSCodeIcon,},
 
     WORDPRESS:{    
     name: "Wordpress",
-    class: "bg-black text-[white",
+    class: "bg-black text-[white] light:text-black",
     icon: WordpressIcon,},
 
     CANVAS:{    
     name: "Canvas",
-    class: "bg-black text-[white",
+    class: "bg-black text-[white] light:text-black",
     icon: CanvasIcon,},
+
+    FASTAPI:{    
+    name: "FastApi",
+    class: "bg-black text-[white] light:text-black",
+    icon: FastApiIcon,},
+
+    MONGO:{    
+    name: "MongoDB",
+    class: "bg-black text-[white] light:text-black",
+    icon: MongoDBIcon,},
 
 }
 
@@ -80,10 +92,18 @@ const PROJECTS = [
         github : 'https://github.com/Pygove/LCHEQ_Inv',
     },
     {
+        title : 'APIRest con FastApi',
+        description : 'API REST utilizando FastAPI y MongoDB.',
+        link : '',
+        image : '/proyects/FastApi.webp',
+        tags : [TAGS.PYTHON,TAGS.FASTAPI,TAGS.MONGO],
+        github : 'https://github.com/Pygove/APIRestFastapi',
+    },
+    {
         title : 'Momentum',
         description : 'Emprendimiento de tarjetas digitales para bodas, cumpleaños, graduaciones, etc.',
-        link : '',
-        image : '/proyects/LCHEQ_1.webp',
+        link : 'https://momentum.kesug.com/',
+        image : '/proyects/momentum_1.webp',
         tags : [TAGS.WORDPRESS,TAGS.CANVAS],
         github : '',
     }

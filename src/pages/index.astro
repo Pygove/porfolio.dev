@@ -6,6 +6,8 @@ import BriefCaseIcon from '../components/icons/BriefCase.astro';
 import CodeIcon from '../components/icons/Code.astro';
 import Proyects from '../components/Proyects.astro'
 import Hero from '../components/Hero.astro';
+import ProfileCheck from '../components/icons/ProfileCheck.astro';
+import AboutMe from '../components/AboutMe.astro'
 ---
 
 <Layout 
@@ -21,7 +23,7 @@ description='Contrata a pygove para crear tu aplicacion web'
 		<SectionContainer id="experiencia">
 			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
 				<BriefCaseIcon class="size-7"/>
-				Experiencia laboral como Freelancer
+				Experiencia como Freelancer
 			</h2>
 			<Experience />
 		</SectionContainer>
@@ -32,6 +34,15 @@ description='Contrata a pygove para crear tu aplicacion web'
 			</h2>
 			<Proyects />
 		</SectionContainer>
+		<SectionContainer id="sobre-mi">
+			<h2
+			  class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
+			>
+			  <ProfileCheck class="size-8" />
+			  Sobre mí
+			</h2>
+			<AboutMe />
+		  </SectionContainer>
 	</main>
 </Layout>
 
