@@ -12,12 +12,36 @@ import WordpressIcon from './icons/Wordpress.astro'
 import CanvasIcon from './icons/Canvas.astro'
 import FastApiIcon from './icons/FastApi.astro'
 import MongoDBIcon from './icons/MongoDB.astro'
+import Powerbi from './icons/Powerbi.astro'
+import Excel from './icons/Excel.astro'
+import LookerStudio from './icons/LookerStudio.astro'
+import PowerQuery from './icons/PowerQuery.astro'
 
 const TAGS = {
     NEXT:{    
     name: "Next.js",
     class: "bg-black text-white",
     icon: NextJSIcon,},
+
+    POWERQUERY:{    
+    name: "PowerQuery",
+    class: "bg-black text-white",
+    icon: PowerQuery,},
+
+    LOOKER:{    
+    name: "LookerStudio",
+    class: "bg-black text-white",
+    icon: LookerStudio,},
+
+    EXCEL:{    
+    name: "Excel",
+    class: "bg-black text-white",
+    icon: Excel,},
+
+    POWERBI:{    
+    name: "PowerBI",
+    class: "bg-black text-white",
+    icon: Powerbi,},
 
     TAILWIND:{    
     name: "Tailwind CSS",
@@ -67,7 +91,7 @@ const TAGS = {
 }
 
 const PROJECTS = [
-    {
+/*    {
         title : 'Venecitas',
         description : 'Sistema de gestión de clientes, productos y proveedores.',
         link : 'https://www.figma.com/proto/1Nv4eu5pE5hlpkzaXGphHR/Venecitas?node-id=517-11783&t=bhAiwkItmj7eIg92-0&scaling=min-zoom&content-scaling=fixed&page-id=16%3A1439&starting-point-node-id=25%3A1412',
@@ -82,6 +106,22 @@ const PROJECTS = [
         image : '/proyects/AgroSistema_1.webp',
         tags : [TAGS.VITE,TAGS.TAILWIND,TAGS.REACT],
         github : '',
+    },*/
+    {
+        title : 'Tractchun',
+        description : 'Reporte interactivo en Power BI para el equipo de Tecnología de Información (TI), encargado de gestionar los tickets relacionados con sus tecnologías de oficina (hardware, software, sistemas, etc.). Con una base de datos de 97,948 tickets, analicé información clave extraída del sistema de tickets y del departamento de Recursos Humanos.',
+        link : '',
+        image : '/proyects/Tractchun.webp',
+        tags : [TAGS.POWERBI,TAGS.POWERQUERY,TAGS.EXCEL],
+        github : 'https://github.com/Pygove/Proyecto_Tractchun',
+    },
+    {
+        title : 'Dashboard para ONG Potenciar Solidario',
+        description : 'Dashboard interactivo para la Fundación Potenciar Solidario, aplicando las habilidades adquiridas en un caso práctico con impacto real. Este dashboard organiza la información de donantes y proveedores de la ONG, ofreciendo una visión integral para decisiones estratégicas.',
+        link : 'https://lookerstudio.google.com/reporting/8290cac9-e4de-42a1-96c5-c32a13f16491',
+        image : '/proyects/reporteONGFondo.webp',
+        tags : [TAGS.LOOKER,TAGS.EXCEL,TAGS.POWERBI,TAGS.POWERQUERY],
+        github : 'https://github.com/Pygove/Proyecto_Potenciar_Solidario',
     },
     {
         title : 'LCHEQ',
@@ -102,7 +142,7 @@ const PROJECTS = [
     {
         title : 'Momentum',
         description : 'Emprendimiento de tarjetas digitales para bodas, cumpleaños, graduaciones, etc.',
-        link : 'https://momentum.kesug.com/',
+        link : 'https://momentuminvitaciones.com/',
         image : '/proyects/momentum_1.webp',
         tags : [TAGS.WORDPRESS,TAGS.CANVAS],
         github : '',
@@ -117,7 +157,7 @@ const PROJECTS = [
       <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
     <div class="w-full md:w-1/2">
       <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-        <img alt="Sección para ingresar nuevos proveedores" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+        <img alt="Imagen del proyecto" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
       </div>
     </div>
   
